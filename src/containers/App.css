@@ -1,6 +1,6 @@
 .TodoApp {
-	background-color: lightgreen;
-	color: #222;
+	background-color: #dcff83;
+	color: #00314c;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -9,4 +9,5 @@
 	align-content: center;
 	width: 100vw;
 	height: 100vh;
+	font-family: 'Quicksand', sans-serif;
 }
