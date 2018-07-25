@@ -10,3 +10,7 @@
 	cursor: pointer;
 	color: #dcff83;
 }
+
+.TodoList ul {
+	padding: 0;
+}
