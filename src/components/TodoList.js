@@ -1,18 +1,12 @@
 import React from 'react';
 import style from './TodoList.css';
 
-const TodoList = props => {
-	const generateJSX = () => {
-		let jsx = [];
-		for (let i=0; i < props.data.length; i++) {
-			jsx.push(<a href="#" key={i} id={props.data[i].id} onClick={() => props.removeTodo(props.data[i].id)}>{props.data[i].text}</a>);
-		}
-		return jsx
-	};
-	const jsx = generateJSX();
-	return (
-		<div className={style.TodoList}>{jsx}</div>
-		)
+const TodoList = (props) => {
+	console.log(props.data)
+	const listItems = props.data.map((item) =>
+		<li key={item.id} href="#" onClick={() => props.removeTodo(item.id)}>{item.text}</li>
+	);
+	return <div className={style.TodoList}><ul>{listItems}</ul></div>
 }
 
 export default TodoList;
